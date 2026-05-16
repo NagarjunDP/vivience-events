@@ -13,7 +13,7 @@
 
   <!-- Loading Screen -->
   <div id="loader" class="loader">
-    <video autoplay muted playsinline class="loader-video" id="loaderVideo">
+    <video autoplay muted playsinline webkit-playsinline class="loader-video" id="loaderVideo">
       <source src="/public/assets/logo-intro.mp4" type="video/mp4" />
     </video>
   </div>
@@ -60,13 +60,29 @@
         <div id="particles"></div>
       </div>
       <div class="hero-content">
-        <img src="/public/assets/logo-color-dark.jpg" alt="Vivience Events" class="hero-logo" id="heroLogo" />
-        <p class="tagline">Crafting Moments. Curating Memories.</p>
+        <img src="/public/assets/logo-white.png" alt="Vivience Events" class="hero-logo" id="heroLogo" />
+        <p class="tagline"><span id="typewriter"></span><span class="typewriter-cursor">|</span></p>
         <div class="hero-line"></div>
         <p class="sub-tagline">Bangalore's Premier Event Experience</p>
         <a href="#services" class="cta-btn">EXPLORE &rarr;</a>
       </div>
     </section>
+
+    <!-- Marquee -->
+    <div class="marquee-wrapper">
+      <div class="marquee-content">
+        <span>TAJ WEST END</span><span class="dot"></span>
+        <span>THE LEELA PALACE</span><span class="dot"></span>
+        <span>ITC GARDENIA</span><span class="dot"></span>
+        <span>JW MARRIOTT</span><span class="dot"></span>
+        <span>FOUR SEASONS</span><span class="dot"></span>
+        <span>TAJ WEST END</span><span class="dot"></span>
+        <span>THE LEELA PALACE</span><span class="dot"></span>
+        <span>ITC GARDENIA</span><span class="dot"></span>
+        <span>JW MARRIOTT</span><span class="dot"></span>
+        <span>FOUR SEASONS</span>
+      </div>
+    </div>
 
     <!-- Services Section -->
     <section id="services" class="services">
@@ -109,10 +125,69 @@
       </div>
     </section>
 
+    <!-- Process Timeline -->
+    <section class="process">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll"><span class="dot"></span>OUR PROCESS<span class="dot"></span></h2>
+        <div class="process-steps">
+          <div class="process-step animate-on-scroll">
+            <div class="step-number">01</div>
+            <h3 class="step-title">Consult</h3>
+            <p class="step-desc">Understanding your vision and aesthetic.</p>
+          </div>
+          <div class="process-step animate-on-scroll" style="transition-delay: 100ms;">
+            <div class="step-number">02</div>
+            <h3 class="step-title">Design</h3>
+            <p class="step-desc">Curating bespoke concepts and mood boards.</p>
+          </div>
+          <div class="process-step animate-on-scroll" style="transition-delay: 200ms;">
+            <div class="step-number">03</div>
+            <h3 class="step-title">Execute</h3>
+            <p class="step-desc">Flawless coordination with premium vendors.</p>
+          </div>
+          <div class="process-step animate-on-scroll" style="transition-delay: 300ms;">
+            <div class="step-number">04</div>
+            <h3 class="step-title">Celebrate</h3>
+            <p class="step-desc">Living your extraordinary moment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="process">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll"><span class="dot"></span>OUR PROCESS<span class="dot"></span></h2>
+        <div class="process-steps">
+          <div class="process-step animate-on-scroll">
+            <div class="step-number">01</div>
+            <h3 class="step-title">Consult</h3>
+            <p class="step-desc">Understanding your vision and aesthetic.</p>
+          </div>
+          <div class="process-step animate-on-scroll" style="transition-delay: 100ms;">
+            <div class="step-number">02</div>
+            <h3 class="step-title">Design</h3>
+            <p class="step-desc">Curating bespoke concepts and mood boards.</p>
+          </div>
+          <div class="process-step animate-on-scroll" style="transition-delay: 200ms;">
+            <div class="step-number">03</div>
+            <h3 class="step-title">Execute</h3>
+            <p class="step-desc">Flawless coordination with premium vendors.</p>
+          </div>
+          <div class="process-step animate-on-scroll" style="transition-delay: 300ms;">
+            <div class="step-number">04</div>
+            <h3 class="step-title">Celebrate</h3>
+            <p class="step-desc">Living your extraordinary moment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
       <div class="container">
         <h2 class="section-title animate-on-scroll"><span class="dot"></span>GALLERY<span class="dot"></span></h2>
+        <p class="gallery-coming-soon animate-on-scroll">Gallery imagery coming soon &mdash; curated from your portfolio.</p>
         
         <div class="gallery-grid">
           <div class="gallery-item item-tall animate-on-scroll">
@@ -208,6 +283,32 @@
       </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll"><span class="dot"></span>TESTIMONIALS<span class="dot"></span></h2>
+        <p class="section-subtitle animate-on-scroll">What our clients say about us</p>
+        
+        <div class="testimonials-grid">
+          <div class="testimonial-card animate-on-scroll">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"Vivience Events turned our dream wedding into reality. The attention to detail was flawless and the execution was seamless. Absolutely the best in Bangalore."</p>
+            <h4 class="client-name">- Priya & Rahul</h4>
+          </div>
+          <div class="testimonial-card animate-on-scroll" style="transition-delay: 100ms;">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"We hired them for our corporate gala. From the bespoke décor to the hospitality, everything screamed luxury. Our stakeholders were completely blown away."</p>
+            <h4 class="client-name">- TechCorp India</h4>
+          </div>
+          <div class="testimonial-card animate-on-scroll" style="transition-delay: 200ms;">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"The floral arrangements were breathtaking. They took all the stress off our shoulders so we could just enjoy the moment. Highly recommended!"</p>
+            <h4 class="client-name">- Sneha Reddy</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container contact-container">
@@ -265,6 +366,18 @@
       </div>
     </section>
 
+    <!-- Instagram Strip -->
+    <section class="instagram-strip">
+      <h2 class="section-title animate-on-scroll" style="margin-bottom: 2rem;"><span class="dot"></span>@VIVIENCEEVENTS<span class="dot"></span></h2>
+      <div class="insta-grid">
+        <div class="insta-item"><div class="gallery-placeholder type-2"></div></div>
+        <div class="insta-item"><div class="gallery-placeholder type-3"></div></div>
+        <div class="insta-item"><div class="gallery-placeholder type-1"></div></div>
+        <div class="insta-item"><div class="gallery-placeholder type-2"></div></div>
+        <div class="insta-item"><div class="gallery-placeholder type-1"></div></div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-top-line"></div>
@@ -282,6 +395,11 @@
     </footer>
     
   </main>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-btn">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
 
   <script type="module" src="/src/main.js"></script>
 </body>

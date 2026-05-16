@@ -48,6 +48,15 @@ if (loaderVideo) {
     hideLoader();
   });
   
+  // Handle iOS/mobile where autoplay is blocked
+  const playPromise = loaderVideo.play();
+  if (playPromise !== undefined) {
+    playPromise.catch(() => {
+      // Autoplay was prevented or failed
+      hideLoader();
+    });
+  }
+  
   // Fallback in case video fails to load or play
   setTimeout(() => {
     if (!document.body.classList.contains('loaded')) {
@@ -212,7 +221,7 @@ const statsObserver = new IntersectionObserver((entries) => {
       updateCounter();
     });
   }
-}, { threshold: 0.5 });
+}, { threshold: 0.1 });
 
 if (statsSection) {
   statsObserver.observe(statsSection);
@@ -223,4 +232,25 @@ if (selectEl) {
   selectEl.addEventListener('change', function() {
     this.style.color = 'var(--white)';
   });
+}
+
+// --- Typewriter Effect ---
+const typewriterEl = document.getElementById('typewriter');
+if (typewriterEl) {
+  const text = "Crafting Moments. Curating Memories.";
+  let i = 0;
+  // wait for loader to finish
+  setTimeout(() => {
+    function type() {
+      if (i < text.length) {
+        typewriterEl.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, 60); // typing speed
+      } else {
+        const cursor = document.querySelector('.typewriter-cursor');
+        if (cursor) cursor.style.animation = 'blink 1s infinite';
+      }
+    }
+    type();
+  }, 2500);
 }
