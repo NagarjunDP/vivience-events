@@ -148,6 +148,15 @@ a {
 .nav-logo {
   width: 120px;
   display: block;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
+.navbar.scrolled .nav-logo {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .nav-links {
@@ -337,8 +346,8 @@ a {
 }
 
 .hero-logo {
-  max-width: 340px;
-  width: 85%;
+  max-width: 240px;
+  width: 75%;
   height: auto;
   opacity: 0;
   transform: scale(0.92);
@@ -347,6 +356,11 @@ a {
 .hero-logo.loaded {
   opacity: 1;
   transform: scale(1);
+}
+@media (min-width: 768px) {
+  .hero-logo {
+    max-width: 340px;
+  }
 }
 @media (min-width: 1024px) {
   .hero-logo {
@@ -365,7 +379,7 @@ a {
 
 .tagline {
   margin-top: 2.5rem;
-  font-size: clamp(16px, 3.5vw, 22px);
+  font-size: clamp(14px, 4vw, 22px);
   letter-spacing: 0.15em;
   color: var(--white);
 }
@@ -378,8 +392,8 @@ a {
 }
 
 .sub-tagline {
-  font-size: clamp(10px, 2.5vw, 13px);
-  letter-spacing: 0.3em;
+  font-size: clamp(9px, 2.5vw, 13px);
+  letter-spacing: 0.2em;
   color: var(--primary-cyan);
   text-transform: uppercase;
   margin-bottom: 3rem;
