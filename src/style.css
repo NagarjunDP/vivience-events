@@ -250,7 +250,7 @@ a {
 }
 
 .mobile-link {
-  font-size: 48px;
+  font-size: clamp(32px, 8vw, 48px);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--white);
@@ -287,6 +287,7 @@ a {
 .hero {
   position: relative;
   height: 100vh;
+  height: 100svh;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -404,7 +405,7 @@ a {
    SECTIONS GENERAL
    ========================================================================== */
 section {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 @media (min-width: 768px) {
   section { padding: 8rem 0; }
@@ -667,13 +668,13 @@ section {
 }
 
 .stat-number {
-  font-size: 48px;
+  font-size: clamp(36px, 8vw, 48px);
   font-weight: 300;
   color: var(--white);
   line-height: 1;
 }
 .stat-plus {
-  font-size: 32px;
+  font-size: clamp(24px, 5vw, 32px);
   color: var(--white);
   vertical-align: super;
 }
@@ -709,7 +710,7 @@ section {
 }
 
 .contact-heading {
-  font-size: clamp(24px, 3vw, 36px);
+  font-size: clamp(20px, 6vw, 36px);
   color: var(--white);
   letter-spacing: 0.1em;
   line-height: 1.3;
